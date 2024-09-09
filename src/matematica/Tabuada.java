@@ -56,20 +56,24 @@ public class Tabuada extends javax.swing.JFrame {
         setTitle("Mathematics");
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Airstrike Academy", 0, 36)); // NOI18N
         jLabel1.setText("Mathematics");
 
+        jLabel2.setFont(new java.awt.Font("Crimson Text", 0, 18)); // NOI18N
         jLabel2.setText("Soma");
 
+        jLabel3.setFont(new java.awt.Font("Crimson Text", 0, 18)); // NOI18N
         jLabel3.setText("subtração");
 
+        jLabel4.setFont(new java.awt.Font("Crimson Text", 0, 18)); // NOI18N
         jLabel4.setText("Multiplicação");
 
+        jLabel5.setFont(new java.awt.Font("Crimson Text", 0, 18)); // NOI18N
         jLabel5.setText("Divisão");
 
-        txtNumaradorSoma.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtNumaradorSoma.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
-        txtDenominadorSoma.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtDenominadorSoma.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
         txtDenominadorSoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDenominadorSomaActionPerformed(evt);
@@ -82,7 +86,7 @@ public class Tabuada extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel7.setText("-");
 
-        lblResultadoSomar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblResultadoSomar.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
         btnResultadoSomar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnResultadoSomar.setText("=");
@@ -92,9 +96,9 @@ public class Tabuada extends javax.swing.JFrame {
             }
         });
 
-        txtNumeradorSubtracao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtNumeradorSubtracao.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
-        txtDenominadorSubtracao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtDenominadorSubtracao.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
         btnResultadoSubtracao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnResultadoSubtracao.setText("=");
@@ -104,11 +108,11 @@ public class Tabuada extends javax.swing.JFrame {
             }
         });
 
-        lblResultadoSubtracao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblResultadoSubtracao.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
-        txtNumeradorMultiplicacao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtNumeradorMultiplicacao.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
-        txtDenominadorMultiplicacao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtDenominadorMultiplicacao.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel8.setText("x");
@@ -121,14 +125,14 @@ public class Tabuada extends javax.swing.JFrame {
             }
         });
 
-        lblResultadoMultiplicacao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblResultadoMultiplicacao.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
-        txtNumDivisao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtNumDivisao.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel9.setText("/");
 
-        txtDenDivisao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtDenDivisao.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
         btnResDivisao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnResDivisao.setText("=");
@@ -138,7 +142,7 @@ public class Tabuada extends javax.swing.JFrame {
             }
         });
 
-        lblResDivisao.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblResDivisao.setFont(new java.awt.Font("Varsity Regular", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -166,7 +170,7 @@ public class Tabuada extends javax.swing.JFrame {
                                 .addComponent(txtDenominadorSoma))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(txtNumeradorSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtDenominadorSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -177,28 +181,25 @@ public class Tabuada extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtDenominadorMultiplicacao)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnResultadoMultiplicar)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblResultadoMultiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btnResultadoSomar)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblResultadoSomar, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(lblResultadoSomar, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnResultadoMultiplicar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblResultadoMultiplicacao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btnResultadoSubtracao)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblResultadoSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(302, 302, 302))
+                                .addComponent(lblResultadoSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(274, 274, 274))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(56, 56, 56)
                         .addComponent(jLabel5))))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(199, 199, 199)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(txtNumDivisao, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -209,8 +210,11 @@ public class Tabuada extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnResDivisao)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblResDivisao, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(200, 200, 200))
+                        .addComponent(lblResDivisao, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(154, 154, 154)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -230,21 +234,23 @@ public class Tabuada extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(txtNumeradorSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtDenominadorSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnResultadoSubtracao)
-                    .addComponent(lblResultadoSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblResultadoSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel7)
+                        .addComponent(txtNumeradorSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtDenominadorSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnResultadoSubtracao)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNumeradorMultiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtDenominadorMultiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(btnResultadoMultiplicar)
-                    .addComponent(lblResultadoMultiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblResultadoMultiplicacao, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtNumeradorMultiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtDenominadorMultiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel8)
+                        .addComponent(btnResultadoMultiplicar)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -254,7 +260,7 @@ public class Tabuada extends javax.swing.JFrame {
                     .addComponent(txtDenDivisao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnResDivisao)
                     .addComponent(lblResDivisao, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         pack();

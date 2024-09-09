@@ -24,33 +24,33 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel4" min="-2" pref="83" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="txtResultado" max="32767" attributes="0"/>
-                  <Component id="btnSomar" pref="85" max="32767" attributes="0"/>
-                  <Component id="txtNumerador" max="32767" attributes="0"/>
-                  <Component id="txtDenominador" max="32767" attributes="0"/>
-              </Group>
               <EmptySpace max="32767" attributes="0"/>
+              <Component id="lblDataHora" min="-2" pref="193" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
           </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="150" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="301" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel4" min="-2" pref="83" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtResultado" max="32767" attributes="0"/>
+                          <Component id="btnSomar" pref="85" max="32767" attributes="0"/>
+                          <Component id="txtNumerador" max="32767" attributes="0"/>
+                          <Component id="txtDenominador" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="lblDataHora" min="-2" pref="193" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="397" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace pref="81" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -58,8 +58,8 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtNumerador" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -76,7 +76,7 @@
                   <Component id="txtResultado" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="40" max="32767" attributes="0"/>
+              <EmptySpace pref="57" max="32767" attributes="0"/>
               <Component id="lblDataHora" min="-2" pref="30" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -87,7 +87,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Black" size="24" style="2"/>
+          <Font name="Blacksword" size="24" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="MATEM&#xc1;TICA SOMAR"/>
       </Properties>
