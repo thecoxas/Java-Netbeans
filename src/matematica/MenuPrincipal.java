@@ -32,7 +32,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela Principal");
-        setBackground(new java.awt.Color(0, 0, 0));
 
         btnTabuada.setFont(new java.awt.Font("Cloister Black", 0, 24)); // NOI18N
         btnTabuada.setText("Tabuada");
