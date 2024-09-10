@@ -58,7 +58,7 @@ public class Tabuada extends javax.swing.JFrame {
         lblResultadoPorcentagem = new javax.swing.JLabel();
         btnPorcentagem = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Mathematics");
         setResizable(false);
 

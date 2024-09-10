@@ -55,7 +55,8 @@ public class Somar extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         lblDataHora = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Mathematics");
 
         jLabel1.setFont(new java.awt.Font("Blacksword", 3, 24)); // NOI18N
         jLabel1.setText("MATEMÁTICA SOMAR");
@@ -138,6 +139,7 @@ public class Somar extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSomarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomarActionPerformed
