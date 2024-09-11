@@ -4,6 +4,7 @@
  */
 package table;
 
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -38,6 +39,7 @@ public class TableTest extends javax.swing.JFrame {
         txtCodigo = new javax.swing.JTextField();
         txtValor = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        btnExcluir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -78,6 +80,14 @@ public class TableTest extends javax.swing.JFrame {
             }
         });
 
+        btnExcluir.setFont(new java.awt.Font("Crimson Text", 0, 24)); // NOI18N
+        btnExcluir.setText("Excluir Produto");
+        btnExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExcluirActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -98,12 +108,13 @@ public class TableTest extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtNomeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(81, 81, 81)
+                        .addComponent(jButton1)
+                        .addGap(80, 80, 80)
+                        .addComponent(btnExcluir)))
                 .addContainerGap(43, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(214, 214, 214))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -122,13 +133,16 @@ public class TableTest extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(btnExcluir))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -137,17 +151,42 @@ public class TableTest extends javax.swing.JFrame {
         String valor = txtValor.getText();
         
         DefaultTableModel tabelaproduto = (DefaultTableModel) tblProdutos.getModel();
+        /*
+        tblProdutos.getModel(): Retorna o modelo de dados da tabela, que, no caso, é um DefaultTableModel. 
+        Ele é convertido para o tipo DefaultTableModel para que você possa usar os métodos específicos dessa classe, 
+        como addRow().
+        */
         Object[] novoProduto = new Object[]{
             codigo,
             nomeProduto,
             valor
+                /*
+                cria um array de objetos que contém os dados do novo produto que será adicionado à tabela:
+                Esses valores estão organizados de forma que correspondem às colunas da tabela.
+                */
         };
         tabelaproduto.addRow(novoProduto);
+        /*
+        addRow(): Este método do DefaultTableModel adiciona uma nova linha à tabela, preenchendo-a com os 
+        dados do array novoProduto (código, nome e valor).
+        */
         
         txtCodigo.setText(null);
         txtNomeProduto.setText(null);
         txtValor.setText(null);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
+       int linhaSelecionada = tblProdutos.getSelectedRow();
+        if (linhaSelecionada == -1) {
+            JOptionPane.showMessageDialog(this, "Por favor selecione uma linha na tabela!");
+            
+        } else {
+            DefaultTableModel tabelaProdutos = (DefaultTableModel) tblProdutos.getModel();
+            tabelaProdutos.removeRow(linhaSelecionada);
+            JOptionPane.showMessageDialog(this, "Item Excluído!");
+        }
+    }//GEN-LAST:event_btnExcluirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -185,6 +224,7 @@ public class TableTest extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnExcluir;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
